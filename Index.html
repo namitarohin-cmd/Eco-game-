@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoLearn Game</title>
+</head>
+<body style="font-family:Arial;text-align:center;background:#e9f7ef;">
+  <h1>♻️ EcoLearn - Waste Game</h1>
+  <p>Where should we put: <b>Plastic Bottle</b>?</p>
+  <button onclick="check('plastic')">Plastic Bin</button>
+  <button onclick="check('organic')">Organic Bin</button>
+  <button onclick="check('ewaste')">E-Waste Bin</button>
+  <p id="result"></p>
+
+  <script>
+    function check(answer) {
+      if(answer === 'plastic') {
+        document.getElementById('result').innerHTML = "✅ Correct! You earned 10 eco-points!";
+      } else {
+        document.getElementById('result').innerHTML = "❌ Wrong bin! Try again.";
+      }
+    }
+  </script>
+</body>
+</html>
